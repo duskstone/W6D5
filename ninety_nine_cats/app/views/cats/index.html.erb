@@ -1,0 +1,12 @@
+<h1> All of the Cats in the WORLD!! </h1>
+
+<section> 
+    <section> 
+    <ul>
+    <% @cats.each do |cat| %> 
+    <li>rent <a href='<%= cat_url(cat) %>'> <%= cat.name %> </a> </li>
+    <% end %>
+    </ul>
+    </section>
+
+ </section>
